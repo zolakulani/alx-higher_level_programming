@@ -10,6 +10,6 @@ if __name__ == "__main__":
     all_names = dir()
 
     """Iterate through the names and print those not starting with "__" """
-    for i in range(len(all_funx)):
+    for i in range(len(all_names)):
         if all_names[i][:2] != "__":
             print("{:s}".format(all_names[i]))
