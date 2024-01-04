@@ -1,21 +1,15 @@
 #!/usr/bin/python3
 
-# Check if the script is being run as the main program
 if __name__ == "__main__":
-    # Import the argv list from the sys module
-    from sys import argv
+    """Print the number of and list of arguments."""
+    import sys
 
-    # Calculate the number of arguments
-    x = len(argv) - 1
-
-    # Check the number of arguments and print accordingly
-    if x < 1:
-        print("{} arguments:".format(x))
-    elif x == 1:
-        print("{} argument.".format(x))
+    count = len(sys.argv) - 1
+    if count == 0:
+        print("0 arguments.")
+    elif count == 1:
+        print("1 argument:")
     else:
-        print("{} arguments:".format(x))
-
-    # Print the position and value of each argument
-    for i in range(x):
-        print("{}: {:s}".format(i + 1, argv[i + 1]))
+        print("{} arguments:".format(count))
+    for i in range(count):
+        print("{}: {}".format(i + 1, sys.argv[i + 1]))
