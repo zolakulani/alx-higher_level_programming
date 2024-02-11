@@ -1,8 +1,5 @@
 #!/usr/bin/python3
 ''' Define add_int funx '''
-
-
-
 def add_integer(a, b=98):
     """
     Adds two integers.
