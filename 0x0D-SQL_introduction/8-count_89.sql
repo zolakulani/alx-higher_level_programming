@@ -1,2 +1,2 @@
 -- Add up
-SHOW first_table (id) values (89);
+SELECT COUNT(*) first_table (id) values (89);
