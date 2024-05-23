@@ -1,4 +1,5 @@
--- Provides a list of every genre found in the database hbtn_0d_tvshows_rate sorted by rating.
+-- Provides a list of every genre found in the database 
+-- hbtn_0d_tvshows_rate sorted by rating.
 -- Records are listed in decreasing order of rating.
 SELECT `name`, SUM(`rate`) AS `rating`
   FROM `tv_genres` AS g
